@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <form method="post" , action="successfull">
+            {% csrf_token %}
+            Enter your username = 
+            <input type="text" name="username">
+            Enter your password = 
+            <input type="password" name="password">
+            
+            <button type="submit" name="submit">Submit </button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+    <form method="post" action="validate">
+        {% csrf_token %}
+    Enter your name : <input type="text" name="name"> <br><br>
+    Enter your username : <input type="text" name="username"><br><br>
+    Enter your password : <input type="password" name="password"><br><br>
+    Enter your email address : <input type="email" name="email"><br><br>
+    <button type="submit" name="submit">Submit </button>
+    </form>
+    </body>
+</html>
